@@ -1,6 +1,6 @@
-def main():
-    print("Hello from youtube-pipline!")
+from fastapi import FastAPI
+from pydantic import BaseModel
+from typing import Dict
+from contextlib import asynccontextmanager
 
-
-if __name__ == "__main__":
-    main()
+app = FastAPI()
