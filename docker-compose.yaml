@@ -8,3 +8,10 @@ services:
     env_file:
       - .env
     restart: always
+
+    networks:
+      - youtube_network
+
+networks:
+  youtube_network:
+    driver: bridge
